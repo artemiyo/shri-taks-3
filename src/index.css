@@ -38,7 +38,7 @@ body {
 }
 
 .slide-progress-value {
-    height: 4;
+    height: 4px;
     background-color: #F4B000;
     transition: transform 0.1s linear;
     transform-origin: left top;
@@ -88,7 +88,7 @@ body {
 }
 
 .theme_light .set-light {
-    display: none;
+    /* display: none; */
 }
 
 .theme_dark .button {
@@ -104,5 +104,5 @@ body {
 }
 
 .theme_dark .set-dark {
-    display: none;
+    /* display: none; */
 }
