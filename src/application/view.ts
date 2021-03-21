@@ -33,10 +33,16 @@ export const initProgress = (parent: HTMLDivElement) => {
     container.appendChild(progress);
 
     parent.appendChild(container);
-    
+
     return progress;
 }
 
 export const setElementTheme = (elem: HTMLElement, theme: SlideTheme) => {
-    elem.classList.add(`theme_${theme}`);
+    if (theme === "dark") {
+        elem.classList.remove(`theme_light`);
+        elem.classList.add(`theme_${theme}`);
+    } else {
+        elem.classList.remove(`theme_dark`);
+        elem.classList.add(`theme_${theme}`);
+    }
 }
