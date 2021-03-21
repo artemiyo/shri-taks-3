@@ -12,7 +12,7 @@ export const createProgressSelector = (state$: Observable<State>) => state$.pipe
     distinctUntilChanged(),    
 );
 
-export const createCurrentIndexSelector = (state$: Observable<State>) => state$.pipe(
+export const createCurrentIndexSelector = (state$: Observable<State >) => state$.pipe(
     map(s => s.index),
     distinctUntilChanged(),
     mergeMapTo(EMPTY),
